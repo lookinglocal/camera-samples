@@ -6,7 +6,7 @@ android:
     - build-tools-29.0.0
     - android-29
     - extra
-  licenses:
-    - 'android-sdk-license-.+'
 
-before_install: cd CameraXBasic
+before_install:
+  - echo y | sdkmanager "ndk-bundle"
+  - cd CameraXBasic
